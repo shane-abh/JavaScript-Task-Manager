@@ -2,6 +2,9 @@
 
 This is a simple task manager app built using JavaScript and jQuery. It allows users to add, edit, and delete tasks, as well as filter tasks by title or description.
 
+## Overview
+![image](https://github.com/shane-abh/JavaScript-Task-Manager/assets/65544944/d6dea60d-f5be-4905-88c1-64a144d2b110)
+
 
 
 ## Features
