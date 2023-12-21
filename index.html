@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager 3</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+  />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <h1> Task.io</h1>
+    </header>
+    <main>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search Tasks"/>
+      </div>
+        <!-- <button class="add-task">Add Tasks</button> -->
+        <div class="grid-container">
+            <div class="to-do-container">
+               <div class="todo-heading">
+                <h2>To Do</h2>
+                <button class="add-task"><img src="./images/icons/add.svg"/></button>
+               </div>
+               <div class="to-do"></div>
+            </div>
+            <div class="in-progress-container">
+                <h2>In Progress</h2>
+               <div class="in-progress"></div>
+            </div>
+            <div class="complete-container">
+                <h2>Completed tasks</h2>
+               <div class="complete"></div>
+            </div>
+        </div>
+
+        <div id="add-task-dialog" title="Add Task" style="display: none">
+            <form>
+
+            
+            <div class="top">
+                <div class="update-note">
+                  <label for="note">Enter Note:</label>
+                  <input id="task-note" name="note" />
+                </div>
+              </div>
+        
+              <div class="task-title">
+                <div class="update-title">
+                  <label for="title">Enter Title:</label>
+                  <input id="task-title"  type="text" name="title"  required />
+                </div>
+              </div>
+        
+              <div class="description">
+                <div class="update-description">
+                  <label for="description"> Enter description</label>
+                  <textarea
+                    id="task-description"
+                    rows="4"
+                    cols="50"
+                    id="description"
+                    name="description"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+        
+              <div class="update-assignees">
+                <label for="assignedTo">Enter assignees:</label>
+                <input
+                  id="task-assignedTo"
+                  name="assignedTo"
+                  placeholder="Enter multiple names separated by a coma"
+                  required
+                />
+              </div>
+        
+              <hr/>
+        
+              <div class="update-cancel">
+                <div class="buttons">
+        
+                    <button id="submit-btn" type="submit">Add Task</button>
+                    <button id="cancel-btn">Cancel</button>
+                </div>
+              </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        © 2023- All rights reserved
+
+    </footer>
+    <script src="taskManager_lib.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

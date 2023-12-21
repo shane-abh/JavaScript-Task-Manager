@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    background-color: #EDF0FE;
+    /* display: flex; */
+}
+
+header,
+footer {
+
+    height: 10vh;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #6D3BF7;
+}
+
+header h1 {
+    font-weight: 500;
+}
+
+main{
+    margin:  0 5vw;
+}
+
+
+
+.grid-container {
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* width: 90%; */
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.grid-container h2 {
+    text-align: center;
+
+}
+
+.to-do-container,
+.in-progress-container,
+.complete-container {
+
+    min-height: 80vh;
+    width: 80%;
+    background: rgba( 221, 225, 245, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 7px );
+-webkit-backdrop-filter: blur( 7px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+
+    margin: 0.1em 1em;
+    border-radius: 1em;
+}
+
+.todo-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-heading h2 {
+    width: 100%;
+}
+
+.todo-heading .add-task {
+    width: 20%;
+    background-color: transparent;
+    border: transparent;
+    padding: 1em;
+
+}
+
+.to-do,
+.in-progress,
+.complete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-container {
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.5em;
+    border-radius: 1em;
+    margin: 1em;
+    background: rgba(255, 255, 255, 0.63);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.note p {
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+.top,
+.task-title,
+.description,
+.duration,
+.assignedTo,
+.status,
+hr,
+.complete-delete {
+    width: 90%;
+}
+
+.task-title h1 {
+    font-weight: 500;
+    font-size: 1.7em;
+    margin-bottom: 2px;
+}
+
+.description p {
+    font-size: 0.9em;
+}
+
+
+.duration .heading {
+    /* background-color: aqua; */
+    font-size: 1em;
+    margin-bottom: -1em;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    width: 80%;
+    font-weight: 570;
+    margin-bottom: 1em;
+}
+
+
+.assignees {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.assignees span {
+    color: white;
+    background-color: blueviolet;
+
+    padding: 0.1em 0.8em;
+    margin: 0.2em;
+    border-radius: 1em;
+}
+
+
+.status .heading {
+    margin-bottom: -1em;
+}
+
+.status-titles {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.status-titles span {
+    text-align: center;
+    width: calc(80%/2);
+    background-color: burlywood;
+    padding: 0.1em 0.8em;
+    margin: 1em 0.1em;
+    border-radius: 1em;
+}
+
+.complete .status-titles span {
+    width: 100%;
+    background-color: #19C7C0;
+    color: white;
+}
+
+hr {
+    height: 0.1em;
+    width: 90%;
+    background-color: black;
+    border-radius: 1em;
+}
+
+.complete-delete {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.complete-delete .buttons button {
+    margin-left: 1em;
+}
+
+.complete-delete .arrows button {
+    background-color: transparent;
+    border: transparent;
+}
+
+.complete-delete .arrows img {
+    width: 2em;
+    height: auto;
+}
+
+.complete-button,
+.delete-button,
+.edit-button {
+    background-color: transparent;
+    border: transparent;
+}
+
+
+
+/* Update Task Card */
+.update-note,
+.update-title,
+.update-description,
+.update-assignees,
+.update-cancel {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.update-task-container {
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* width: 25%; */
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.update-note input {
+    height: 2vh;
+}
+
+.update-title {
+    margin: 1.6em 0em;
+}
+
+.update-title input {
+    min-height: 5vh;
+}
+
+.update-assignees {
+    margin: 1.6em 0em;
+}
+
+.update-assignees input {
+    min-height: 5vh;
+    width: 90%;
+}
+
+input,
+textarea {
+
+    border: 1px rgba(187, 184, 184, 0.5) solid;
+    border-radius: 1em;
+    margin-top: 0.6em;
+    padding: 0.2em 0.5em;
+}
+
+.update-cancel .buttons {
+
+    display: flex;
+    justify-content: end;
+}
+
+.update-cancel .buttons button {
+    margin-left: 1em;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+#search-input{
+    width: 40vw;
+    height: 3vh;
+    padding: 0.5em;
+}
+
+::placeholder {
+    color: black;
+    text-align: center;
+  }
+
+@media screen and (max-width: 1000px){
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .to-do-container,
+    .in-progress-container,
+    .complete-container{
+        margin: 1em 0;
+        
+    }
+   
+
+    .to-do,
+.in-progress,
+.complete {
+
+    flex-direction: row;
+ 
+}
+
+
+}
