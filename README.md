@@ -15,3 +15,6 @@ The task manager app has the following features:
 * Edit tasks: Users can edit existing tasks by clicking the "Edit" button next to the task. A dialog box will appear where users can change the task title, description, and assignees.
 * Delete tasks: Users can delete existing tasks by clicking the "Delete" button next to the task.
 * Filter tasks: Users can filter tasks by title or description by typing a search query into the search box.
+
+## Live Demo
+Click [here](https://shane-abh.github.io/JavaScript-Task-Manager/) to view the live demo.
